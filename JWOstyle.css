@@ -1,3 +1,12 @@
 /*Cascading Style Sheet for homepage
       Author: Joshua W. Oden
       Date: 5 September 2017*/
+
+*		{font-family: Arial;}
+
+body
+{
+    background: #09729b;
+    background: linear-gradient(to bottom right, #09729b, #120A4F) fixed;
+    color: white;
+}

@@ -1,3 +1,3 @@
-# zimblic.github.io
+# joshuaoden.github.io
 Main user site for my Github account.
-https://zimblic.github.io
+https://joshuaoden.github.io

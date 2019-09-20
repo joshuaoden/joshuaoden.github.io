@@ -5,18 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <!--
-			Author: Joshua W. Oden
+			Author: J.W.Oden
 			oof. I need to finish this
 			Main Web Page for my site.
         -->
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147518032-1"></script>
-	<script>
-  		window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
- 		gtag('js', new Date());
-  		gtag('config', 'UA-147518032-1');
-	</script>
+        <meta charset="UTF-8">
+	      <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>JWO</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -25,12 +19,84 @@
     </head>
     <body>
         <div id="particles-js">
-                <h3>Joshua Oden.</h3>
-                <div id="contact"><a href="https://github.com/joshuaoden">Github</a> | <a href="https://www.linkedin.com/in/joshoden/">LinkedIn</a></div>
-        </div>
-         
-        <script src="particles.js"></script>
-        <script src="app.js"></script>
+          <header class="cd-morph-dropdown">
+            
+            <a href="#0" class="nav-trigger">Open Nav<span aria-hidden="true"></span></a>
+            
+            <nav class="main-nav">
+                <ul>
+                  <li class="has-dropdown gallery" data-content="aboutme">
+                      <a href="#0">About Me</a>
+                  </li>
+
+                  <li class="has-dropdown links" data-content="projects">
+                      <a href="#0">Projects</a>
+                  </li>
+
+                  <li class="has-dropdown button" data-content="contact">
+                      <a href="#0">Contact Me</a>
+                  </li>
+                </ul>
+            </nav>
+
+            <div class="morph-dropdown-wrapper">
+                <div class="dropdown-list">
+                  <ul>
+                      <li id="aboutme" class="dropdown links">
+                      <a href="#0" class="label">About Me</a>
+						
+						          <div class="content">
+                          <ul id="timeline">
+                            <li>Started casually programming</li>
+                            <li>Moved to Texarkana</li>
+                            <li>Got engaged</li>
+                            <li>Graduated from A&M</li>
+                            <li>Joined TRiO as an academic coach</li>
+                            <li>Joined Rotary International</li>
+                          </ul> 
+                      </div>
+                      </li>
+
+                      <li id="projects" class="dropdown links">
+                        <a href="#0" class="label">Projects</a>
+						
+						          <div class="content">
+                        <ul class="links-list">
+                            <li><a href="https://github.com/joshuaoden/Smart-Irrigation-Network">Smart Irrigation Network (It's a sprinkler)</a></li>
+                            <li><a href="https://github.com/joshuaoden/Mobile-Cookbook">Mobile Cookbook App</a></li>
+                            <li><a href="https://joshuaoden.github.io/DFA/">DFA (Automata Theory Project)</a></li>
+                        </ul>
+                      </div>
+                      </li>
+
+                      <li id="contact" class="dropdown gallery">
+                        <a href="#0" class="label">Contact</a>
+						
+						          <div class="content">
+                        <ul class= "icons">
+                            <li><a href="https://www.linkedin.com/in/joshoden/"><img src='img/linkedin.png' /></a></li>
+                            <li><a href="https://github.com/joshuaoden"><img src='img/github.png' /></a></li>
+                            
+                        </ul>
+                        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
+                    </div>
+                    
+                      </li>
+                  </ul>
+
+                  <div class="bg-layer" aria-hidden="true"></div>
+                </div> <!-- dropdown-list -->
+            </div> <!-- morph-dropdown-wrapper -->
+          </header>
+          <div id="howdybox">
+                <h1><span class="howdy">Hello There,</span> I'm Joshua Oden.</h1>
+
+          </div>
+                
+        
+        <script src="js/navmenu.js"></script>
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
         
     </body>
 

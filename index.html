@@ -6,12 +6,12 @@
     <head>
         <!--
 			Author: J.W.Oden
-			oof. I need to finish this
+			Ayy, it's almost ready now.
 			Main Web Page for my site.
         -->
         <meta charset="UTF-8">
 	      <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
         <title>JWO</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link type="text/css" rel="stylesheet" href="JWOstyle.css" /> <!--Link to external css-->
@@ -25,7 +25,7 @@
             
             <nav class="main-nav">
                 <ul>
-                  <li class="has-dropdown gallery" data-content="aboutme">
+                  <li class="has-dropdown bio" data-content="aboutme">
                       <a href="#0">About Me</a>
                   </li>
 
@@ -33,7 +33,7 @@
                       <a href="#0">Projects</a>
                   </li>
 
-                  <li class="has-dropdown button" data-content="contact">
+                  <li class="has-dropdown social" data-content="contact">
                       <a href="#0">Contact Me</a>
                   </li>
                 </ul>
@@ -42,17 +42,19 @@
             <div class="morph-dropdown-wrapper">
                 <div class="dropdown-list">
                   <ul>
-                      <li id="aboutme" class="dropdown links">
+                      <li id="aboutme" class="dropdown bio">
                       <a href="#0" class="label">About Me</a>
 						
 						          <div class="content">
+                          <img id="selfie" src='img/itscold.jpg' />
                           <ul id="timeline">
-                            <li>Started casually programming</li>
-                            <li>Moved to Texarkana</li>
-                            <li>Got engaged</li>
-                            <li>Graduated from A&M</li>
-                            <li>Joined TRiO as an academic coach</li>
-                            <li>Joined Rotary International</li>
+                            <li><span class="year">'96 </span> Born and raised by 2 wonderful parents</li>
+                            <li><span class="year">'11 </span> Started casually programming</li>
+                            <li><span class="year">'14 </span> Moved out to the 'real world' (Texarkana)</li>
+                            <li><span class="year">'17 </span> Got engaged</li>
+                            <li><span class="year">'18 </span> Got a CS degree from A&M</li>
+                            <li><span class="year">'18 </span> Joined TRiO as an academic coach</li>
+                            <li><span class="year">'19 </span> Joined Rotary International</li>
                           </ul> 
                       </div>
                       </li>
@@ -61,15 +63,28 @@
                         <a href="#0" class="label">Projects</a>
 						
 						          <div class="content">
-                        <ul class="links-list">
+                        <ul>
+                          
+                          <li>
+                            <h2>Web Pages</h2>
+                            <ul class="links-list">
+                              <li><a href="https://joshuaoden.github.io/DFA/">DFA (Automata Theory Project)</a></li>
+                            
+                          </ul>
+                        </li>
+                        <li>
+                          <h2>Github Links</h2>
+                          <ul class="links-list">
                             <li><a href="https://github.com/joshuaoden/Smart-Irrigation-Network">Smart Irrigation Network (It's a sprinkler)</a></li>
                             <li><a href="https://github.com/joshuaoden/Mobile-Cookbook">Mobile Cookbook App</a></li>
-                            <li><a href="https://joshuaoden.github.io/DFA/">DFA (Automata Theory Project)</a></li>
+                          </ul>
+                        </li>
                         </ul>
+
                       </div>
                       </li>
 
-                      <li id="contact" class="dropdown gallery">
+                      <li id="contact" class="dropdown social">
                         <a href="#0" class="label">Contact</a>
 						
 						          <div class="content">
@@ -78,8 +93,8 @@
                             <li><a href="https://github.com/joshuaoden"><img src='img/github.png' /></a></li>
                             
                         </ul>
-                        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
-                    </div>
+                        <div style="font-size:10px;">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
+                      </div>
                     
                       </li>
                   </ul>

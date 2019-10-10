@@ -1,3 +1,4 @@
+// License: https://codyhouse.co/mit
 jQuery(document).ready(function($){
 	function morphDropdown( element ) {
 		this.element = element;

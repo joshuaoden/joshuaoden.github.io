@@ -29,7 +29,7 @@ html,body{
         width:100%;
         height:100%;
         background: #120A4F;
-        background: linear-gradient(to bottom right, #09729b, #120A4F) fixed;
+        background: linear-gradient(to bottom right, #10a58c, #120A4F) fixed;
         color: white;
         
    }
@@ -47,7 +47,7 @@ html,body{
      width: 100%;
      height: 100%;
      background: #120A4F;
-     background: linear-gradient(to bottom right, #09729b, #120A4F) fixed;
+     background: linear-gradient(to bottom right, #10a58c, #120A4F) fixed;
      background-image: url('');
      background-size: cover;
      background-position: 50% 50%;
@@ -148,6 +148,9 @@ footer
   text-align: center;
   font-family: "Bookman Old Style";
   font-style: italic;
+  position: absolute;
+ width: 100%;
+  bottom: 0;
 }
 /* =============================================================================
   Header css for nav menu
@@ -160,7 +163,7 @@ footer
   position: relative;
   height: 60px;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #272727;
 }
 .cd-morph-dropdown::before {
   /* never visible - used in JS to check mq */
@@ -184,7 +187,7 @@ footer
 .cd-morph-dropdown .nav-trigger span, .cd-morph-dropdown .nav-trigger span::after, .cd-morph-dropdown .nav-trigger span::before {
   /* these are the 3 lines of the menu icon */
   position: absolute;
-  background-color: #1A1A1A;
+  background-color: #ffffff;
   height: 3px;
   width: 26px;
 }

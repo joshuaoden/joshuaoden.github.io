@@ -33,11 +33,11 @@ html,body{
         color: white;
         
    }
-*		{font-family: Montserrat, Helvetica, Arial, sans-serif;}
+*		{font-family: Montserrat, Helvetica, Arial, serif;}
 *, *::after, *::before {
   box-sizing: border-box;
   }
-
+a {color: #ffffff}
    canvas{
      display:block;
    }
@@ -77,11 +77,11 @@ html,body{
   }
 
 #timeline li {
+  line-height: 1.2;
   position: relative;
   margin: 0;
   padding-bottom: 1em;
   padding-left: 20px;
-  font-style: italic;
   
 }
 #timeline li::before {
@@ -104,20 +104,32 @@ html,body{
 .year {
   font-weight: bold;
   color: #01bd9d;
+  font-style: italic;
+
   
 }
-#selfie {
+#whoami img {
+  display: inline-block;
+    vertical-align: top;
   width:200px;
   height:200px;
   margin-right: 20px;
-  border-radius: 25px;
+  border-radius: 5px;
 }
-#whoami{
+#whoami ul {
   display: inline-block;
-  color: #01bd9d;
   text-align: center;
-
+  height: 200px;
 }
+#whoami li {
+  color: #01bd9d;
+  font-size: 1.4rem;
+  text-transform: none;
+  font-weight: 550;
+  line-height: 3;
+}
+
+
 .icons {
   color: #ffffff;
   padding: 20px;
@@ -148,16 +160,7 @@ border-bottom: none;
     background-color: #01bd9d;
     color: #fff;
 }
-footer 
-{
-  display: block;
-  text-align: center;
-  font-family: "Bookman Old Style";
-  font-style: italic;
-  position: absolute;
- width: 100%;
-  bottom: 0;
-}
+
 /* =============================================================================
   Header css for nav menu
   License: https://codyhouse.co/mit Codyhouse Experiment
@@ -480,7 +483,7 @@ footer
     background: #272727;
   }
   .cd-morph-dropdown .bio .content {
-    width: 500px;
+    width: 600px;
     padding-bottom: .8em;
     background: #272727;
   }
@@ -488,10 +491,6 @@ footer
     width: 470px;
     padding-bottom: .8em;
     background: #272727;
-  }
-  .cd-morph-dropdown .social .content li, .cd-morph-dropdown .links .content, .cd-morph-dropdown .bio .content {
-    margin-bottom: 1.8em;
-    
   }
   .cd-morph-dropdown .links .content > ul > li {
     margin-top: 0;

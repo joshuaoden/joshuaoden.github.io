@@ -189,6 +189,7 @@ border-bottom: none;
 .cd-morph-dropdown .nav-trigger {
   /* menu icon - visible on small screens only */
   position: absolute;
+  float: right; /*fix Safari issue*/
   top: 0;
   left:0;
   height: 100%;

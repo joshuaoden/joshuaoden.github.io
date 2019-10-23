@@ -25,19 +25,19 @@
 /* =============================================================================
   My CSS
   ========================================================================== */   
-   html,body{ 
+html,body{ 
         width:100%;
         height:100%;
         background: #120A4F;
-        background: linear-gradient(to bottom right, #09729b, #120A4F) fixed;
+        background: linear-gradient(to bottom right, #10a58c, #120A4F) fixed;
         color: white;
         
    }
-  *		{font-family: Arial;}
-   *, *::after, *::before {
+*		{font-family: Montserrat, Helvetica, Arial, serif;}
+*, *::after, *::before {
   box-sizing: border-box;
   }
-
+a {color: #ffffff}
    canvas{
      display:block;
    }
@@ -47,7 +47,7 @@
      width: 100%;
      height: 100%;
      background: #120A4F;
-     background: linear-gradient(to bottom right, #09729b, #120A4F) fixed;
+     background: linear-gradient(to bottom right, #10a58c, #120A4F) fixed;
      background-image: url('');
      background-size: cover;
      background-position: 50% 50%;
@@ -59,7 +59,7 @@
         z-index: 0;
         color: #120A4F;
         text-align: center;
-        font-size: 155%;
+        font-size: 180%;
 				border-radius:30px; padding: 14px 16px; /*Shadowed and rounded box.*/
 				border: 10px #000;
         max-width: 500px;
@@ -68,8 +68,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        /*/margin-top: -50px;
-        margin-left: -200px;*/
 				box-shadow: 10px 10px 5px black;
       }
 .howdy
@@ -79,12 +77,12 @@
   }
 
 #timeline li {
+  line-height: 1.2;
   position: relative;
   margin: 0;
   padding-bottom: 1em;
   padding-left: 20px;
-  font-style: italic;
-  color:#85cadb;
+  
 }
 #timeline li::before {
   content: '';
@@ -106,14 +104,38 @@
 .year {
   font-weight: bold;
   color: #01bd9d;
+  font-style: italic;
+
   
 }
-#selfie {
+#whoami #profile {
+  display: inline-block;
+    vertical-align: top;
   width:200px;
   height:200px;
   margin-right: 20px;
-  border-radius: 25px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url('img/download.png');
+
 }
+
+#whoami ul {
+  display: inline-block;
+  text-align: center;
+  height: 200px;
+}
+#whoami li {
+  color: #01bd9d;
+  font-size: 1.4rem;
+  text-transform: none;
+  font-weight: 550;
+  line-height: 3;
+}
+
+
 .icons {
   color: #ffffff;
   padding: 20px;
@@ -140,14 +162,24 @@ border-bottom: none;
 .icons li:hover {
   opacity: 0.7;
 }
+::selection {
+    background-color: #01bd9d;
+    color: #fff;
+}
+
 /* =============================================================================
   Header css for nav menu
+  License: https://codyhouse.co/mit Codyhouse Experiment
+  
+  Heavily modified and fixed for better responsiveness and style to match the rest of the site.
   ========================================================================== */ 
 .cd-morph-dropdown {
   z-index: 10;
   position: relative;
   height: 60px;
-  background-color: #ffffff;
+  width: 100%;
+
+  background-color: #272727;
 }
 .cd-morph-dropdown::before {
   /* never visible - used in JS to check mq */
@@ -158,8 +190,8 @@ border-bottom: none;
   /* menu icon - visible on small screens only */
   position: absolute;
   top: 0;
-  
-  height: 60px;
+  left:0;
+  height: 100%;
   margin: auto;
   
   /* replace text with icon */
@@ -171,7 +203,7 @@ border-bottom: none;
 .cd-morph-dropdown .nav-trigger span, .cd-morph-dropdown .nav-trigger span::after, .cd-morph-dropdown .nav-trigger span::before {
   /* these are the 3 lines of the menu icon */
   position: absolute;
-  background-color: #1A1A1A;
+  background-color: #ffffff;
   height: 3px;
   width: 26px;
 }
@@ -281,6 +313,8 @@ border-bottom: none;
   font-size: 1.3rem;
   margin: 20px 0 10px 14px;
 }
+
+
 @media only screen and (min-width: 1000px) {
   .cd-morph-dropdown {
     position: absolute;
@@ -457,7 +491,7 @@ border-bottom: none;
     background: #272727;
   }
   .cd-morph-dropdown .bio .content {
-    width: 400px;
+    width: 600px;
     padding-bottom: .8em;
     background: #272727;
   }
@@ -465,10 +499,6 @@ border-bottom: none;
     width: 470px;
     padding-bottom: .8em;
     background: #272727;
-  }
-  .cd-morph-dropdown .social .content li, .cd-morph-dropdown .links .content, .cd-morph-dropdown .bio .content {
-    margin-bottom: 1.8em;
-    
   }
   .cd-morph-dropdown .links .content > ul > li {
     margin-top: 0;
@@ -479,12 +509,22 @@ border-bottom: none;
     font-size: 1.2rem;
     margin-left: 0;
   }
-  .cd-morph-dropdown .content h2 {
+  .cd-morph-dropdown .content h2
+  {
     font-size: 1.8rem;
     text-transform: none;
     font-weight: normal;
     color: #01bd9d;
     margin: 0 0 .6em;
+  }
+  #whoami li
+  {
+    font-size: 1.6rem;
+    text-transform: none;
+    font-weight: normal;
+    color: #01bd9d;
+    margin: 0 0 .6em;
+    line-height: 2;
   }
   .cd-morph-dropdown .bg-layer {
     /* morph dropdown background */

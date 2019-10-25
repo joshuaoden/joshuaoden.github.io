@@ -110,9 +110,9 @@ a {color: #ffffff}
 }
 #whoami #profile {
   display: inline-block;
-    vertical-align: top;
-  width:200px;
-  height:200px;
+  vertical-align: top;
+  width:150px;
+  height:150px;
   margin-right: 20px;
   border-radius: 5px;
   background-repeat: no-repeat;
@@ -123,7 +123,7 @@ a {color: #ffffff}
 }
 
 #whoami ul {
-  display: inline-block;
+  display: none;
   text-align: center;
   height: 200px;
 }
@@ -189,16 +189,17 @@ border-bottom: none;
 .cd-morph-dropdown .nav-trigger {
   /* menu icon - visible on small screens only */
   position: absolute;
+  float: right; /*fix Safari issue*/
   top: 0;
   left:0;
   height: 100%;
-  margin: auto;
   
   /* replace text with icon */
   overflow: hidden;
-  text-indent: 100%;
+  /*text-indent: 100%;*/
   white-space: nowrap;
   color: transparent;
+  text-align: left;
 }
 .cd-morph-dropdown .nav-trigger span, .cd-morph-dropdown .nav-trigger span::after, .cd-morph-dropdown .nav-trigger span::before {
   /* these are the 3 lines of the menu icon */
@@ -314,7 +315,9 @@ border-bottom: none;
   margin: 20px 0 10px 14px;
 }
 
-
+/* =============================================================================
+  Header css for Desktop!
+  ========================================================================== */ 
 @media only screen and (min-width: 1000px) {
   .cd-morph-dropdown {
     position: absolute;
@@ -483,6 +486,13 @@ border-bottom: none;
   .cd-morph-dropdown .content > ul > li:nth-of-type(2n) {
     margin-right: 0;
   }
+  #whoami #profile {
+  width:200px;
+  height:200px;
+  }
+  #whoami ul {
+  display: inline-block;
+  }
   .cd-morph-dropdown .social .content {
     /* you need to set a width for the .content elements because they have a position absolute */
     
@@ -491,7 +501,7 @@ border-bottom: none;
     background: #272727;
   }
   .cd-morph-dropdown .bio .content {
-    width: 600px;
+    width: 650px;
     padding-bottom: .8em;
     background: #272727;
   }
